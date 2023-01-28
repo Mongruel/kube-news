@@ -51,7 +51,7 @@ spec:
     spec:
       containers:
         - name: web
-          image: arduinni/kube-news:latest
+          image: arduinni/kube-news:{{TAG}}
           ports:
             - containerPort: 8080
           env:
