@@ -40,7 +40,7 @@ kind: Deployment
 metadata:
   name: web
 spec:
-  replicas: 4
+  replicas: 1
   selector:
     matchLabels:
       app: web
@@ -51,7 +51,7 @@ spec:
     spec:
       containers:
         - name: web
-          image: arduinni/kube-news:v1
+          image: arduinni/kube-news:latest
           ports:
             - containerPort: 8080
           env:
